@@ -1,0 +1,38 @@
+{
+    "name": "khochbod94/face-id-laravel",
+    "description": "Face ID Laravel",
+    "type": "library",
+    "require": {
+        "php": ">=7.1",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "A Khoch",
+            "email": "khochbod94@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Akhoch\\FaceId\\": "src/"}
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Akhoch\\FaceId\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.3@dev",
+        "orchestra/testbench": "^3.7"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Akhoch\\FaceId\\FaceIdServiceProvider"
+            ],
+            "aliases": {
+                "FaceId": "Akhoch\\FaceId\\Facades\\FaceId"
+            }
+        }
+    }
+}
